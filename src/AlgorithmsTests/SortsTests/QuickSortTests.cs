@@ -99,7 +99,7 @@ namespace AlgorithmsTests.SortsTests
 
         private static void AssertIfSorted(IList<int> list)
         {
-            for (var i = 0; i < list.Count - 2; i++)
+            for (var i = 0; i < list.Count - 1; i++)
             {
                 Assert.IsTrue(list[i] <= list[i + 1]);
             }
